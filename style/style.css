@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu Mono';
+    font-size: 14px;
+    /* background: linear-gradient(to right,lightblue,blue,blue,lightblue); */
+    background-color: rgb(136, 122, 97);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    /* min-height: 200px; */
+    /* min-width: 200px; */
+}
+
+.bg_normal {
+    background-color: #828282;
+}
+
+.bg_grass {
+    background-color: #439937;
+}
+
+.bg_fire {
+    background-color: #E5613E;
+}
+
+.bg_water {
+    background-color: #309AE2;
+}
+
+.bg_electric {
+    background-color: #E0BD28;
+}
+
+.bg_rock {
+    background-color: #AAA581;
+}
+
+.bg_fighting {
+    background-color: #E59121;
+}
+
+.bg_psychic {
+    background-color: #EA6C8D;
+}
+
+.bg_ghost {
+    background-color: #6F4570;
+}
+
+.bg_poison {
+    background-color: #9454CC;
+}
+
+.bg_flying {
+    background-color: #74ABD1;
+}
+
+.bg_ground {
+    background-color: #A5733C;
+}
+
+.bg_dragon {
+    background-color: #576FBD;
+}
+
+.bg_ice {
+    background-color: #47C9C9;
+}
+
+.bg_bug {
+    background-color: #A0A028;
+}
+
+.bg_steel {
+    background-color: #6BADC9;
+}
+
+.bg_dark {
+    background-color: #4F4747;
+}
+
+.bg_fairy {
+    background-color: #E28DE2;
+}
+
+.bg_shadow {
+    background-color: #000000;
+}
+
+.bg_unknown {
+    background-color: #68A090;
+}
+
+.bg_physical {
+    background-color: #FF4400;
+}
+
+.bg_special {
+    background-color: #2266CC;
+}
+
+.bg_status {
+    background-color: #999999;
+}

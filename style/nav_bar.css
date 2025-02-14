@@ -1,0 +1,131 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 25px; */
+    background-color: lightslategray;
+    z-index: 9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.nav_bar_menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.show_selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2px;
+    max-width: 300px;
+    /* width: 100vw; */
+    flex-grow: 1;
+    height: 40px;
+    margin: 2px;
+    background-color: lightgray;
+
+}
+
+.show_selector div {
+    /* margin: 2px; */
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.activ_selector {
+    background-color: rgba(0, 255, 0, 0.25) !important;
+}
+
+.search_img {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.img_selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.buttons {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+span {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.burger_menu {
+    display: none;
+    height: 46px;
+    width: 46px;
+
+
+}
+
+.burger_menu img {
+    height: 46px;
+    width: 46px;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+.side_nav_bar_menu{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all ease-in-out 125ms;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 47px;
+    left: 0;
+    background-color: lightslategray;
+}
+
+.slide_in{
+    transform: translateX(0%);
+}
+
+
+@media screen and (max-width: 670px) {
+    .nav_bar_menu{
+        display: none;
+    }
+
+    .burger_menu {
+        display: flex;
+    }
+
+    .show_selector {
+        width: 90vw;
+    
+    }
+}
