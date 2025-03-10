@@ -22,6 +22,10 @@ function printNavBar() {
     let htmlcode = /*html*/`
     <div class="nav_bar_menu">
         <div class="show_selector">
+            <a class="buttons link" href="https://saschasiegert.de/policy" target="_blank" rel="noopener noreferrer">Privat Policy</a>
+            <a class="buttons link" href="https://saschasiegert.de/policy" target="_blank" rel="noopener noreferrer">Legal Notice</a>
+        </div>
+        <div class="show_selector">
             <span>Info</span>
             <div onclick="selectInfo(true)" id="select_general" class="activ_selector buttons">General</div>
             <div onclick="selectInfo(false)" id="select_skill" class="buttons">Skill</div>
@@ -42,6 +46,7 @@ function printNavBar() {
     <div class="burger_menu" onclick="showNav()">
         <img src="./img/lupe.svg" alt="">
     </div>
+    
     `;
 
     return htmlcode;
@@ -74,7 +79,7 @@ function printBurgerMenu() {
 }
 
 function showNav() {
-let frame = document.getElementById('side_nav').classList.toggle('slide_in')
+    let frame = document.getElementById('side_nav').classList.toggle('slide_in')
 }
 
 function setImageSelector(number) {
@@ -125,7 +130,6 @@ function nameOrNumber(filter, sample) {
         return sample.name.includes(filter);
     }
 }
-
 
 function testForCompletSearch() {
     if (!(search_count == Object.keys(pokemon).length)) {
